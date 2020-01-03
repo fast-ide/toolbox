@@ -38,3 +38,10 @@
 
 - git-plus
 - pynvim
+
+## Bootstrap deploy
+
+```ShellSession
+$ ./scripts/docker_build.sh
+$ ./scripts/docker_deploy.sh
+```
