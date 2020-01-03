@@ -6,29 +6,27 @@ set -ex
 
 brew config
 
-brew install --build-bottle zsh \
+brew install --build-bottle ag \
+             catimg \
+             ctags \
+             fpp \
+             fzf \
+             git-extras \
+             grc \
+             htop \
+             httpie \
+             jid \
+             jq \
+             ncdu \
+             neovim \
+             node \
              python@2 \
              python@3 \
-             pyenv \
-             node \
-             nvm \
-             vim \
-             neovim \
-             tmux \
-             fpp \
-             ag \
-             fzf \
-             ctags \
-             git-extras \
              tig \
-             htop \
-             catimg \
-             grc \
-             jq \
-             jid \
-             httpie \
-             ncdu \
-             vimpager
+             tmux \
+             vim \
+             vimpager \
+             zsh
 
 brew cleanup
 

@@ -1,47 +1,40 @@
-[![Build Status](https://travis-ci.org/rusdevops/fast-ide.svg?branch=master)](https://travis-ci.org/rusdevops/fast-ide)
+[![Build Status](https://travis-ci.org/fast-ide/bootstrap.svg?branch=master)](https://travis-ci.org/fast-ide/bootstrap)
 
-💨 The **Fast IDE** you can only dream of ⛅
+### brew packages
 
-### Run
+- ag
+- catimg
+- ctags
+- fpp
+- fzf
+- git-extras
+- grc
+- htop
+- httpie
+- jid
+- jq
+- ncdu
+- neovim
+- node
+- python@2
+- python@3
+- tig
+- tmux
+- vim
+- vimpager
+- zsh
 
-```Shell
-docker pull fastide/ubuntu:19.04
-docker run -it fastide/ubuntu:19.04 zsh -c "nvim +PlugInstall +qa && zsh"
-```
+### npm packages
 
-### Deploy
+- diff-so-fancy
+- git-recent
+- git-stats
+- gitmoji-cli
+- jscpd
+- taskbook
+- vtop
 
-```Shell
-# on Ubuntu Disco 🕺
-docker pull fastide/ubuntu:19.04
-docker create -ti --name fastide fastide/ubuntu:19.04 bash
-docker cp fastide:/home/developer /home/developer # docker rm -f fastide
-sudo useradd developer && sudo passwd developer
-sudo chown -R developer /home/developer
-su - developer
-zsh -c "nvim +PlugInstall +qa && zsh"
-```
+### pip packages
 
-### Install
-
-```Shell
-# on the newly installed macOS 🍎
-make install
-```
-
-```Shell
-# on the newly installed Linux 🐧
-sudo make requirements
-make install
-```
-
-### Font settings
-
-```Shell
-# this is required for OS that don't support non-ascii characters
-git clone https://github.com/powerline/fonts
-cd fonts
-./install.sh
-# select 'Ubuntu Mono' font in terminal preferences
-```
-
+- git-plus
+- pynvim
