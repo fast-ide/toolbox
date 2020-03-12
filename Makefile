@@ -1,13 +1,9 @@
 SHELL = /bin/bash
 
-all: requirements install
-
-requirements:
-	./requirements.sh
+all: install
 
 install:
 	./install.sh
-	./bootstrap.sh
 
 docker-build:
 	./scripts/docker_build.sh
