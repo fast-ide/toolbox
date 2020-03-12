@@ -1,6 +1,9 @@
 SHELL = /bin/bash
 
-all: install
+all: requirements install
+
+requirements:
+	./requirements.sh
 
 install:
 	./install.sh
