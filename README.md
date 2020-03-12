@@ -1,5 +1,10 @@
 [![Build Status](https://travis-ci.org/fast-ide/bootstrap.svg?branch=master)](https://travis-ci.org/fast-ide/bootstrap)
 
+### install
+```
+make all
+```
+
 ### brew packages
 
 - ag
@@ -39,7 +44,7 @@
 - git-plus
 - pynvim
 
-## Bootstrap deploy
+## bootstrap deploy
 
 ```ShellSession
 $ ./scripts/docker_build.sh
