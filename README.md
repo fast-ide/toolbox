@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/fast-ide/bootstrap.svg?branch=master)](https://travis-ci.org/fast-ide/bootstrap)
-
 ### install
 ```
 make all
@@ -50,3 +48,9 @@ make all
 $ ./scripts/docker_build.sh
 $ ./scripts/docker_deploy.sh
 ```
+
+## troubleshooting
+
+illegal instruction
+> You have to use -mno-options for doing it.
+https://stackoverflow.com/posts/30729935/timeline
