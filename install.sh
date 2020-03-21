@@ -31,10 +31,25 @@ brew install --build-bottle ag \
                             zsh
 
 brew postinstall grc \
-                 python@2 \
-                 python@3 \
+                 the_silver_searcher \
+                 catimg \
+                 ctags \
+                 fzf \
+                 git-extras \
+                 httpie \
+                 jid \
+                 jq \
+                 ncdu \
+                 neovim \
                  node \
-                 neovim
+                 python@2 \
+                 python@2 \
+                 tig \
+                 tmux \
+                 vim \
+                 vimpager \
+                 zsh
+
 
 brew cleanup
 
@@ -48,7 +63,7 @@ npm install -g jscpd \
                git-stats \
                diff-so-fancy \
                taskbook \
-               vtop
+               gtop
 
 # ----------------------------------------------------------------------------
 # Install python packages
