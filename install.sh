@@ -6,7 +6,7 @@ set -ex
 
 brew config
 
-brew install --build-from-source --build-bottle ag \
+brew install --build-bottle ag \
                             catimg \
                             ctags \
                             fpp \
