@@ -33,7 +33,8 @@ brew install --build-bottle ag \
 brew postinstall grc \
                  python@2 \
                  python@3 \
-                 node
+                 node \
+                 neovim
 
 brew cleanup
 
