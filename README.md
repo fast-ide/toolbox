@@ -53,6 +53,7 @@ $ ./scripts/docker_deploy.sh
 
 illegal instruction
 > You have to use -mno-options for doing it.
+
 https://stackoverflow.com/posts/30729935/timeline
 
 Find which assembly instruction caused an Illegal Instruction error without debugging
