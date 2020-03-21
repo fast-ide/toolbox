@@ -6,8 +6,6 @@ set -ex
 
 brew config
 
-brew install llvm
-
 brew install --build-bottle ag \
                             catimg \
                             ctags \
