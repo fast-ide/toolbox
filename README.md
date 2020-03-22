@@ -35,7 +35,7 @@ make all
 - gitmoji-cli
 - jscpd
 - taskbook
-- vtop
+- gtop
 
 ### pip packages
 
