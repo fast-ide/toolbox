@@ -31,5 +31,5 @@ jobs:
       - name: build
         run: |
           docker build -t fastide/bootstrap-${{ matrix.family }}:${{ matrix.version  }} --build-arg OS_FAMILY=${{ matrix.family }} --build-arg OS_VERSION=${{ matrix.version  }} .
-          echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin
+          echo "${DOCKER_PASSWORD}" | docker login --username fastide --password-stdin
           docker push fastide/bootstrap-${{ matrix.family }}:${{ matrix.version  }}
