@@ -7,7 +7,7 @@ set -ex
 brew config
 
 packages="ag \
-          catimg \
+          curl \
           ctags \
           fpp \
           fzf \
