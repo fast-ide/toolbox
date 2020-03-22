@@ -28,7 +28,7 @@ packages="ag \
           vimpager \
           zsh"
 
-brew install --build-bottle ${packages}
+brew install "$@" ${packages}
 
 brew postinstall ${packages}
 
