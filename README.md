@@ -1,3 +1,5 @@
+![](https://github.com/fast-ide/bootstrap/workflows/ci_dockerfile/badge.svg)
+
 ### install
 ```
 make all
