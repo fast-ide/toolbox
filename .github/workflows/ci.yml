@@ -8,8 +8,8 @@ jobs:
     name: build
     runs-on: ubuntu-18.04
     env:
-      OS_FAMILY=ubuntu
-      OS_VERSION=18.04
+      OS_FAMILY: ubuntu
+      OS_VERSION: 18.04
     steps:
       - uses: actions/checkout@master
       - name: build
