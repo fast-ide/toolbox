@@ -1,0 +1,19 @@
+name: ci_dockerfile
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-18.04
+    env:
+      OS_FAMILY=ubuntu
+      OS_VERSION=18.04
+    steps:
+      - uses: actions/checkout@master
+      - name: build
+        run: |
+          docker build -t fastide/bootstrap-${OS_FAMILY}:${OS_VERSION} --build-arg OS_FAMILY=${OS_FAMILY} --build-arg OS_VERSION=${OS_VERSION} .
+          echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+          docker push fastide/bootstrap-${OS_FAMILY}:${OS_VERSION}
