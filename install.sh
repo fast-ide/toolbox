@@ -6,47 +6,31 @@ set -ex
 
 brew config
 
-brew install --build-bottle ag \
-                            catimg \
-                            ctags \
-                            fpp \
-                            fzf \
-                            git-extras \
-                            grc \
-                            htop \
-                            httpie \
-                            jid \
-                            jq \
-                            ncdu \
-                            neovim \
-                            node \
-                            python@2 \
-                            python@3 \
-                            tig \
-                            tmux \
-                            vim \
-                            vimpager \
-                            zsh
+packages="ag \
+          catimg \
+          ctags \
+          fpp \
+          fzf \
+          git-extras \
+          grc \
+          htop \
+          httpie \
+          jid \
+          jq \
+          ncdu \
+          neovim \
+          node \
+          python@2 \
+          python@3 \
+          tig \
+          tmux \
+          vim \
+          vimpager \
+          zsh"
 
-brew postinstall grc \
-                 the_silver_searcher \
-                 catimg \
-                 ctags \
-                 fzf \
-                 git-extras \
-                 httpie \
-                 jid \
-                 jq \
-                 ncdu \
-                 neovim \
-                 node \
-                 python@2 \
-                 python@2 \
-                 tig \
-                 tmux \
-                 vim \
-                 vimpager \
-                 zsh
+brew install --build-bottle ${packages}
+
+brew postinstall ${packages}
 
 brew cleanup
 
