@@ -20,6 +20,7 @@ packages="ag \
           ncdu \
           neovim \
           node \
+          python@2 \
           python@3 \
           tig \
           tmux \
@@ -49,5 +50,6 @@ npm install -g jscpd \
 # Install python packages
 # ----------------------------------------------------------------------------
 
+pip2 install pynvim
 pip3 install pynvim \
              git-plus
