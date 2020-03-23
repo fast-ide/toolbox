@@ -1,4 +1,4 @@
-![](https://github.com/fast-ide/bootstrap/workflows/ci_dockerfile/badge.svg)
+![ci_dockerfile](https://github.com/fast-ide/bootstrap/workflows/ci_dockerfile/badge.svg?branch=master)
 
 ### install
 ```
