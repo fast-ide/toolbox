@@ -19,13 +19,13 @@ packages="ag \
           jq \
           ncdu \
           neovim \
+          node \
           python@2 \
           python@3 \
           tig \
           tmux \
           vim \
           vimpager \
-          vtop \
           zsh"
 
 brew install "$@" ${packages}
@@ -37,6 +37,18 @@ brew uninstall go || echo "go is already uninstalled"
 brew uninstall pandoc || echo "pandoc is already uninstalled"
 
 rm -rf $HOME/.cache
+
+# ----------------------------------------------------------------------------
+# Install npm packages
+# ----------------------------------------------------------------------------
+
+npm install -g jscpd \
+               gitmoji-cli \
+               git-recent \
+               git-stats \
+               diff-so-fancy \
+               taskbook \
+               gtop
 
 # ----------------------------------------------------------------------------
 # Install python packages
