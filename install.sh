@@ -41,7 +41,8 @@ rm -rf $HOME/.cache
 # Install npm packages
 # ----------------------------------------------------------------------------
 
-npm install -g git-recent \
+npm install -g diff-so-fancy \
+               git-recent \
                git-stats \
                gtop
 
