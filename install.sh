@@ -25,7 +25,6 @@ packages="ag \
           tmux \
           vim \
           vimpager \
-          vtop \
           zsh"
 
 brew install "$@" ${packages}
