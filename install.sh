@@ -34,6 +34,10 @@ brew install "$@" ${packages}
 brew postinstall ${packages}
 
 brew cleanup
+brew uninstall go || echo "go is already uninstalled"
+brew uninstall pandoc || echo "pandoc is already uninstalled"
+
+rm -rf $HOME/.cache
 
 # ----------------------------------------------------------------------------
 # Install npm packages
