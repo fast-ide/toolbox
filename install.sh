@@ -13,7 +13,6 @@ packages="ag \
           fzf \
           git-extras \
           grc \
-          htop \
           httpie \
           jid \
           jq \
@@ -42,12 +41,8 @@ rm -rf $HOME/.cache
 # Install npm packages
 # ----------------------------------------------------------------------------
 
-npm install -g jscpd \
-               gitmoji-cli \
-               git-recent \
+npm install -g git-recent \
                git-stats \
-               diff-so-fancy \
-               taskbook \
                gtop
 
 # ----------------------------------------------------------------------------
