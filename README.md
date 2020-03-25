@@ -8,7 +8,6 @@ make all
 ### brew packages
 
 - ag
-- catimg
 - ctags
 - fpp
 - fzf
