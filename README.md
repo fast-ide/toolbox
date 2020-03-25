@@ -29,16 +29,6 @@ make all
 - vimpager
 - zsh
 
-### npm packages
-
-- diff-so-fancy
-- git-recent
-- git-stats
-- gitmoji-cli
-- jscpd
-- taskbook
-- gtop
-
 ### pip packages
 
 - git-plus
