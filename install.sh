@@ -19,6 +19,7 @@ brew install --build-bottle ag \
                             httpie \
                             jid \
                             jq \
+                            lf \
                             ncdu \
                             neovim \
                             node \
