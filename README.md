@@ -1,3 +1,5 @@
+![ci_dockerfile](https://github.com/fast-ide/bootstrap/workflows/ci_dockerfile/badge.svg?branch=master)
+
 ### install
 ```
 make all
@@ -6,7 +8,6 @@ make all
 ### brew packages
 
 - ag
-- catimg
 - ctags
 - fpp
 - fzf
@@ -26,16 +27,6 @@ make all
 - vim
 - vimpager
 - zsh
-
-### npm packages
-
-- diff-so-fancy
-- git-recent
-- git-stats
-- gitmoji-cli
-- jscpd
-- taskbook
-- vtop
 
 ### pip packages
 
@@ -58,3 +49,5 @@ https://stackoverflow.com/posts/30729935/timeline
 
 Find which assembly instruction caused an Illegal Instruction error without debugging
 https://stackoverflow.com/posts/40223712/timeline
+
+> help wanted

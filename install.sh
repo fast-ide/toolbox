@@ -6,49 +6,46 @@ set -ex
 
 brew config
 
-brew install --build-bottle llvm --with-clang
+packages="ag \
+          curl \
+          ctags \
+          fpp \
+          fzf \
+          git-extras \
+          grc \
+          httpie \
+          jid \
+          jq \
+          lf \
+          ncdu \
+          neovim \
+          node \
+          python@2 \
+          python@3 \
+          tig \
+          tmux \
+          vim \
+          vimpager \
+          zsh"
 
-brew install --build-bottle ag \
-                            catimg \
-                            ctags \
-                            fpp \
-                            fzf \
-                            git-extras \
-                            grc \
-                            htop \
-                            httpie \
-                            jid \
-                            jq \
-                            lf \
-                            ncdu \
-                            neovim \
-                            node \
-                            python@2 \
-                            python@3 \
-                            tig \
-                            tmux \
-                            vim \
-                            vimpager \
-                            zsh
+brew install "$@" ${packages}
 
-brew postinstall grc \
-                 python@2 \
-                 python@3 \
-                 node
+brew postinstall ${packages}
 
 brew cleanup
+brew uninstall go || echo "go is already uninstalled"
+brew uninstall pandoc || echo "pandoc is already uninstalled"
+
+rm -rf $HOME/.cache
 
 # ----------------------------------------------------------------------------
 # Install npm packages
 # ----------------------------------------------------------------------------
 
-npm install -g jscpd \
-               gitmoji-cli \
+npm install -g diff-so-fancy \
                git-recent \
                git-stats \
-               diff-so-fancy \
-               taskbook \
-               vtop
+               gtop
 
 # ----------------------------------------------------------------------------
 # Install python packages
