@@ -16,6 +16,7 @@ packages="ag \
           httpie \
           jid \
           jq \
+          lf \
           ncdu \
           neovim \
           node \
