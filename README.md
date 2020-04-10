@@ -17,6 +17,7 @@ make all
 - httpie
 - jid
 - jq
+- lf
 - ncdu
 - neovim
 - node
