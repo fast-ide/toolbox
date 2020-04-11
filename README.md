@@ -34,12 +34,6 @@ make all
 - git-plus
 - pynvim
 
-## bootstrap deploy
-
-```ShellSession
-$ ./scripts/docker_build.sh
-$ ./scripts/docker_deploy.sh
-```
 
 ## troubleshooting
 
