@@ -32,16 +32,3 @@ make all
 
 - git-plus
 - pynvim
-
-
-## troubleshooting
-
-illegal instruction
-> You have to use -mno-options for doing it.
-
-https://stackoverflow.com/posts/30729935/timeline
-
-Find which assembly instruction caused an Illegal Instruction error without debugging
-https://stackoverflow.com/posts/40223712/timeline
-
-> help wanted
