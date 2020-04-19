@@ -36,6 +36,8 @@ brew cleanup
 brew uninstall go || echo "go is already uninstalled"
 brew uninstall pandoc || echo "pandoc is already uninstalled"
 
+ln -s $HOME/.linuxbrew/bin $HOME/.bin
+
 rm -rf $HOME/.cache
 
 # ----------------------------------------------------------------------------
