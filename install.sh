@@ -6,7 +6,7 @@ set -ex
 
 brew config
 
-packages="ag \
+packages="ack \
           curl \
           ctags \
           fpp \
