@@ -21,7 +21,6 @@ make all
 - ncdu
 - neovim
 - node
-- python@2
 - python@3
 - tig
 - tmux
