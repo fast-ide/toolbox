@@ -20,7 +20,6 @@ packages="ag \
           ncdu \
           neovim \
           node \
-          python@2 \
           python@3 \
           tig \
           tmux \
@@ -53,6 +52,5 @@ npm install -g diff-so-fancy \
 # Install python packages
 # ----------------------------------------------------------------------------
 
-pip2 install pynvim
 pip3 install pynvim \
              git-plus
