@@ -8,10 +8,12 @@ make all
 ### brew packages
 
 - ag
+- cmake
 - ctags
 - fpp
 - fzf
 - git-extras
+- go
 - grc
 - htop
 - httpie
