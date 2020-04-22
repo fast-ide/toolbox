@@ -8,6 +8,7 @@ brew config
 
 packages="ack \
           curl \
+          cmake \
           ctags \
           fpp \
           fzf \
