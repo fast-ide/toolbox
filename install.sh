@@ -13,6 +13,7 @@ packages="ack \
           fpp \
           fzf \
           git-extras \
+          go \
           grc \
           httpie \
           jid \
