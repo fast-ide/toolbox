@@ -29,6 +29,8 @@ packages="ack \
           vimpager \
           zsh"
 
+yes | perl -MCPAN -e 'install Test::Harness'
+
 brew install "$@" ${packages}
 
 brew postinstall ${packages}
