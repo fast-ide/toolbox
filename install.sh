@@ -29,6 +29,7 @@ packages="ack \
           vimpager \
           zsh"
 
+brew install perl
 yes | perl -MCPAN -e 'install Test::Harness'
 
 brew install "$@" ${packages}
@@ -38,6 +39,7 @@ brew postinstall ${packages}
 brew cleanup
 brew uninstall go || echo "go is already uninstalled"
 brew uninstall pandoc || echo "pandoc is already uninstalled"
+brew uninstall perl
 
 ln -s $HOME/.linuxbrew/bin $HOME/.bin
 
