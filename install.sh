@@ -39,6 +39,7 @@ packages="ack \
           # tree \
 
 if brew ls --versions perl >/dev/null; then
+    echo "perl already is installed"
 else
     brew install perl
 fi
