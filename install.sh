@@ -5,6 +5,7 @@ set -ex
 # ----------------------------------------------------------------------------
 
 brew config
+brew update
 
 function install_or_upgrade {
 
