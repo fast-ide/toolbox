@@ -38,7 +38,9 @@ packages="ack \
           # lf \
           # tree \
 
-install_or_upgrade perl
+if ! [ -x "$(command -v perl)" ]; then
+  install_or_upgrade perl
+fi
 yes | perl -MCPAN -e 'install Test::Harness'
 
 for package in $packages
@@ -48,7 +50,7 @@ do
 done
 
 brew cleanup
-brew uninstall perl
+brew uninstall perl || echo "perl is uninstalled"
 
 ln -s `brew --prefix`/bin/nvim `brew --prefix`/bin/vim
 git clone https://github.com/trapd00r/vimcat
