@@ -6,6 +6,16 @@ set -ex
 
 brew config
 
+function install_or_upgrade {
+
+    if brew ls --versions "$1" >/dev/null; then
+        HOMEBREW_NO_AUTO_UPDATE=1 brew upgrade $@ "$1"
+        brew postinstall ${packages}
+    else
+        HOMEBREW_NO_AUTO_UPDATE=1 brew install $@ "$1"
+    fi
+}
+
 packages="ack \
           curl \
           cmake \
@@ -29,18 +39,16 @@ packages="ack \
           vimpager \
           zsh"
 
-brew uninstall go || echo "go is already uninstalled"
-brew uninstall cmake || echo "cmake is already uninstalled"
-
 brew install perl
 yes | perl -MCPAN -e 'install Test::Harness'
 
-brew install "$@" ${packages}
 
-brew postinstall ${packages}
+for package in $(packages)
+do
+  install_or_upgrade ${package}
+done
 
 brew cleanup
-brew uninstall pandoc || echo "pandoc is already uninstalled"
 brew uninstall perl
 
 ln -s $HOME/.linuxbrew/bin $HOME/.bin
