@@ -35,13 +35,10 @@ packages="ack \
           python@3 \
           tig \
           tmux \
-          vim \
-          vimpager \
           zsh"
 
-brew install perl
+install_or_upgrade perl
 yes | perl -MCPAN -e 'install Test::Harness'
-
 
 for package in $(packages)
 do
@@ -51,8 +48,11 @@ done
 brew cleanup
 brew uninstall perl
 
+ln -s $HOME/.linuxbrew/bin/nvim $HOME/.linuxbrew/bin/vim
+git clone https://github.com/trapd00r/vimcat
+cd vimcat && cp vimcat $HOME/.linuxbrew/bin/
+cd .. && rm -rf vimcat
 ln -s $HOME/.linuxbrew/bin $HOME/.bin
-
 rm -rf $HOME/.cache
 
 # ----------------------------------------------------------------------------
