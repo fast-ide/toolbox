@@ -5,7 +5,6 @@ set -ex
 # ----------------------------------------------------------------------------
 
 brew config
-brew update
 
 function install_or_upgrade {
 
@@ -39,7 +38,10 @@ packages="ack \
           # lf \
           # tree \
 
-install_or_upgrade perl
+if brew ls --versions perl >/dev/null; then
+else
+    brew install perl
+fi
 export PERL_MM_USE_DEFAULT=1
 `brew --prefix`/bin/perl -MCPAN -e 'install Test::Harness'
 
