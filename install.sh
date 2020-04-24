@@ -78,3 +78,5 @@ pip3 install pynvim \
              git-plus
 
 ln -s python3 `brew --prefix`/bin/python
+
+GO111MODULE=on go get github.com/jstemmer/gotags
