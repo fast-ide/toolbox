@@ -29,6 +29,9 @@ packages="ack \
           vimpager \
           zsh"
 
+brew uninstall go || echo "go is already uninstalled"
+brew uninstall cmake || echo "cmake is already uninstalled"
+
 brew install perl
 yes | perl -MCPAN -e 'install Test::Harness'
 
