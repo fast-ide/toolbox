@@ -5,16 +5,15 @@
 make all
 ```
 
-### brew packages
+### packages
 
 - ag
 - cmake
 - ctags
 - fpp
 - fzf
-- git-extras
 - go
-- grc
+- gotags
 - htop
 - httpie
 - jid
@@ -23,14 +22,7 @@ make all
 - ncdu
 - neovim
 - node
-- python@3
+- python
 - tig
 - tmux
-- vim
-- vimpager
 - zsh
-
-### pip packages
-
-- git-plus
-- pynvim
