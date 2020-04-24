@@ -46,9 +46,4 @@ cd .. && rm -rf vimcat
 npm install -g diff-so-fancy \
                gtop
 
-export SHELL=/bin/zsh
-
-git clone https://github.com/fast-ide/fast-ide
-cd fast-ide
-./install.sh
-cd .. && rm -rf fast-ide
+GO111MODULE=on go get github.com/jstemmer/gotags
