@@ -28,7 +28,6 @@ packages="ack \
           httpie \
           jid \
           jq \
-          lf \
           ncdu \
           neovim \
           node \
@@ -36,6 +35,8 @@ packages="ack \
           tig \
           tmux \
           zsh"
+          # lf \
+          # tree \
 
 install_or_upgrade perl
 yes | perl -MCPAN -e 'install Test::Harness'
@@ -49,11 +50,10 @@ done
 brew cleanup
 brew uninstall perl
 
-ln -s $HOME/.linuxbrew/bin/nvim $HOME/.linuxbrew/bin/vim
+ln -s `brew --prefix`/bin/nvim `brew --prefix`/bin/vim
 git clone https://github.com/trapd00r/vimcat
-cd vimcat && cp vimcat $HOME/.linuxbrew/bin/
+cd vimcat && cp vimcat `brew --prefix`/bin/
 cd .. && rm -rf vimcat
-ln -s $HOME/.linuxbrew/bin $HOME/.bin
 rm -rf $HOME/.cache
 
 # ----------------------------------------------------------------------------
