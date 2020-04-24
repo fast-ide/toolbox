@@ -32,7 +32,7 @@ packages="ack \
           ncdu \
           neovim \
           node \
-          python@3 \
+          python \
           tig \
           tmux \
           tree \
