@@ -9,10 +9,10 @@ brew config
 function install_or_upgrade {
 
     if brew ls --versions "$1" >/dev/null; then
-        HOMEBREW_NO_AUTO_UPDATE=1 brew upgrade $@
-        brew postinstall $1
+        HOMEBREW_NO_AUTO_UPDATE=1 brew upgrade $1
     else
         HOMEBREW_NO_AUTO_UPDATE=1 brew install $@
+        brew postinstall $1
     fi
 }
 
