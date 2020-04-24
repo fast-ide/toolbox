@@ -38,11 +38,9 @@ packages="ack \
           # lf \
           # tree \
 
-if ! [ -x "$(command -v perl)" ]; then
-  install_or_upgrade perl
-fi
+install_or_upgrade perl
 export PERL_MM_USE_DEFAULT=1
-perl -MCPAN -e 'install Test::Harness'
+`brew --prefix`/bin/perl -MCPAN -e 'install Test::Harness'
 
 for package in $packages
 do
