@@ -37,6 +37,7 @@ packages="ack \
           tig \
           tmux \
           tree \
+          wtfutil \
           zsh"
 
 if brew ls --versions perl >/dev/null; then
