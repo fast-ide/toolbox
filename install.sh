@@ -41,7 +41,8 @@ packages="ack \
 if ! [ -x "$(command -v perl)" ]; then
   install_or_upgrade perl
 fi
-yes | perl -MCPAN -e 'install Test::Harness'
+export PERL_MM_USE_DEFAULT=1
+perl -MCPAN -e 'install Test::Harness'
 
 for package in $packages
 do
