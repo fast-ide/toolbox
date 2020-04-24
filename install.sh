@@ -24,6 +24,7 @@ packages="ack \
           fzf \
           git-extras \
           go \
+          gotags \
           grc \
           httpie \
           jid \
@@ -78,5 +79,3 @@ pip3 install pynvim \
              git-plus
 
 ln -s python3 `brew --prefix`/bin/python
-
-GO111MODULE=on go get github.com/jstemmer/gotags
