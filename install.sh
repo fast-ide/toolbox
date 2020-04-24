@@ -76,3 +76,5 @@ npm install -g diff-so-fancy \
 
 pip3 install pynvim \
              git-plus
+
+ln -s python3 `brew --prefix`/bin/python
