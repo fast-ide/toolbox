@@ -37,7 +37,6 @@ brew install "$@" ${packages}
 brew postinstall ${packages}
 
 brew cleanup
-brew uninstall go || echo "go is already uninstalled"
 brew uninstall pandoc || echo "pandoc is already uninstalled"
 brew uninstall perl
 
