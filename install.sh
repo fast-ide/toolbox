@@ -28,15 +28,15 @@ packages="ack \
           httpie \
           jid \
           jq \
+          lf \
           ncdu \
           neovim \
           node \
           python@3 \
           tig \
           tmux \
+          tree \
           zsh"
-          # lf \
-          # tree \
 
 if brew ls --versions perl >/dev/null; then
     echo "perl already is installed"
