@@ -30,7 +30,6 @@ packages="ack \
           jid \
           jq \
           lf \
-          llvm \
           ncdu \
           neovim \
           node \
