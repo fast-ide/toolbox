@@ -77,7 +77,8 @@ npm install -g diff-so-fancy \
 # Install python packages
 # ----------------------------------------------------------------------------
 
-pip3 install pynvim \
-             git-plus
+python -m pip install jedi \
+                      git-plus \
+                      pynvim
 
 ln -s python3 `brew --prefix`/bin/python
