@@ -7,7 +7,7 @@ set -x
 
 case $(uname | tr '[:upper:]' '[:lower:]') in
   linux*)
-    ./scripts/linuxbrew/install.sh
+    ./linuxbrew/install.sh
     ;;
   darwin*)
     which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
