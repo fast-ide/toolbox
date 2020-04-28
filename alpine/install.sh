@@ -6,6 +6,7 @@ apk add --no-cache \
         ctags \
         fzf \
         git \
+        gnupg \
         go \
         jq \
         linux-headers \
