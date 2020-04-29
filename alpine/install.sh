@@ -1,6 +1,7 @@
 apk add --no-cache \
         ack \
         bash \
+        chezmoi \
         cmake \
         curl \
         ctags \

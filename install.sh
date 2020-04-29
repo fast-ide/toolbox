@@ -17,9 +17,10 @@ function install_or_upgrade {
 }
 
 packages="ack \
-          curl \
+          chezmoi \
           cmake \
           ctags \
+          curl \
           fpp \
           fzf \
           git-extras \
