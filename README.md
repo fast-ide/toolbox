@@ -25,4 +25,5 @@ make all
 - python
 - tig
 - tmux
+- wtfutil
 - zsh
