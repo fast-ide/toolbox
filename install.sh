@@ -16,7 +16,7 @@ function install_or_upgrade {
     fi
 }
 
-packages="ack \
+packages="ag \
           chezmoi \
           cmake \
           ctags \
