@@ -27,3 +27,8 @@ make all
 - tmux
 - wtfutil
 - zsh
+
+### troobleshoting
+```
+Illegal instruction
+```
