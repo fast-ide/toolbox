@@ -17,7 +17,6 @@ function install_or_upgrade {
 }
 
 packages="ag \
-          chezmoi \
           cmake \
           ctags \
           curl \
