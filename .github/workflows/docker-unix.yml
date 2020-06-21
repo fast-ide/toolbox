@@ -34,5 +34,3 @@ jobs:
       - name: build
         run: |
           docker build -t fastide/toolbox-${{ matrix.family }}:${{ matrix.version  }} --build-arg OS_FAMILY=${{ matrix.family }} --build-arg OS_VERSION=${{ matrix.version  }} .
-          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username fastide --password-stdin
-          docker push fastide/toolbox-${{ matrix.family }}:${{ matrix.version  }}
