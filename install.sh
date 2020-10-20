@@ -34,6 +34,7 @@ packages="ag \
           ncdu \
           neovim \
           node \
+          nushell \
           python \
           tig \
           tmux \
