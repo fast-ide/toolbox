@@ -43,6 +43,9 @@ packages="ag \
           wtfutil \
           zsh"
 
+brew install gcc@9 $@
+brew install llvm --cc= gcc-9 $@
+
 for package in $packages
 do
   echo $package
