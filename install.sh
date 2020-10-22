@@ -31,7 +31,6 @@ packages="ag \
           jid \
           jq \
           lf \
-          llvm \
           ncdu \
           neovim \
           node \
