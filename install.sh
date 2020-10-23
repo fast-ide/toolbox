@@ -42,7 +42,9 @@ packages="ag \
           wtfutil \
           zsh"
 
-brew install llvm $@
+brew install gcc@9
+brew install --cc=gcc-9 llvm $@
+brew uninstall gcc@9
 
 for package in $packages
 do
