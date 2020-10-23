@@ -30,7 +30,7 @@ apk add --no-cache \
 
 ln -s /usr/bin/python3 /usr/bin/python
 
-apk add py3-pip libc-dev
+apk add py3-pip python3-dev libc-dev
 
 pip install pynvim git-plus
 
