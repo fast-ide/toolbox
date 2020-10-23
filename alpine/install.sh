@@ -32,7 +32,7 @@ ln -s /usr/bin/python3 /usr/bin/python
 
 apk add python3-dev libc-dev
 
-python -m pip install pynvim git-plus
+pip install pynvim git-plus
 
 wget https://github.com/gokcehan/lf/releases/download/r14/lf-linux-amd64.tar.gz && \
 tar -xf lf-linux-amd64.tar.gz && \
