@@ -2,6 +2,7 @@ apk add --no-cache \
         ack \
         bash \
         chezmoi \
+        clang-extra-tools \
         cmake \
         curl \
         ctags \
