@@ -1,7 +1,10 @@
 apk add --no-cache \
         ack \
         bash \
+        build-base \
         chezmoi \
+        clang \
+        clang-static clang-dev \
         clang-extra-tools \
         cmake \
         curl \
@@ -12,7 +15,7 @@ apk add --no-cache \
         go \
         jq \
         linux-headers \
-        llvm \
+        llvm-static llvm-dev \
         make \
         ncdu \
         neovim \
