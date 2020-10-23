@@ -42,7 +42,7 @@ packages="ag \
           wtfutil \
           zsh"
 
-brew install llvm --cc=/usr/bin/gcc $@
+brew install llvm --cc=gcc-9 $@
 
 for package in $packages
 do
