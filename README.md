@@ -17,6 +17,7 @@ make all
 - htop
 - httpie
 - jid
+- llvm
 - jq
 - lf
 - ncdu
@@ -27,8 +28,3 @@ make all
 - tmux
 - wtfutil
 - zsh
-
-### troobleshoting
-```
-Illegal instruction
-```
