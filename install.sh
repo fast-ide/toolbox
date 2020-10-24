@@ -21,6 +21,7 @@ packages="ag \
           cmake \
           ctags \
           curl \
+          fd \
           fpp \
           fzf \
           git-extras \
