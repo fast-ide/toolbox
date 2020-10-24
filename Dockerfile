@@ -4,4 +4,5 @@ FROM fastide/linuxbrew-${OS_FAMILY}:${OS_VERSION}
 
 USER developer
 COPY install.sh /tmp/
-RUN /tmp/install.sh --build-bottle
+# RUN /tmp/install.sh --build-bottle
+RUN /tmp/install.sh
