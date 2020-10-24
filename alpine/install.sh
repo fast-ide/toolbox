@@ -9,6 +9,7 @@ apk add --no-cache \
         cmake \
         curl \
         ctags \
+        fd \
         fzf \
         git \
         gnupg \
