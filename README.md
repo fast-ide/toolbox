@@ -28,3 +28,8 @@ make all
 - tmux
 - wtfutil
 - zsh
+
+```
+# example of manual building for ubuntu 20.04
+docker build -t fastide/toolbox-ubuntu:20.04 --build-arg OS_FAMILY=ubuntu --build-arg OS_VERSION=20.04 .
+```
