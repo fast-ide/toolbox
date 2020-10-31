@@ -33,7 +33,7 @@ ln -s /usr/bin/python3 /usr/bin/python
 
 apk add py3-pip python3-dev libc-dev
 
-pip install pynvim git-plus
+pip install pynvim git-plus jedi asciinema
 
 wget https://github.com/gokcehan/lf/releases/download/r14/lf-linux-amd64.tar.gz && \
 tar -xf lf-linux-amd64.tar.gz && \

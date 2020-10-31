@@ -75,4 +75,5 @@ ln -s python3 `brew --prefix`/bin/python
 
 python -m pip install jedi \
                       git-plus \
-                      pynvim
+                      pynvim \
+                      asciinema
