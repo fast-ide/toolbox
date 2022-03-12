@@ -17,9 +17,6 @@ jobs:
           - os: ubuntu-20.04
             family: ubuntu
             version: 20.04
-          - os: debian-10
-            family: debian
-            version: 10
           - os: centos-8
             family: centos
             version: 8
