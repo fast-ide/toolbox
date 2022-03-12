@@ -42,6 +42,8 @@ packages="ag \
           wtfutil \
           zsh"
 
+brew cleanup
+
 brew doctor || echo "brew doctor warnings"
 
 brew install llvm $@
