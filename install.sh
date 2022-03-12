@@ -42,7 +42,7 @@ packages="ag \
           wtfutil \
           zsh"
 
-brew doctor
+brew doctor || echo "brew doctor warnings"
 
 arch -x86_64 brew install llvm $@
 
