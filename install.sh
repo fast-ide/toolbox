@@ -76,11 +76,10 @@ npm install -g diff-so-fancy \
 # ----------------------------------------------------------------------------
 
 pyenv install 3.9.7
-eval "$(pyenv init -)"
 pyenv global 3.9.7
 pyenv shell 3.9.7
 
-python -m pip install jedi \
+pyenv which pip install jedi \
                       git-plus \
                       pynvim \
                       asciinema
