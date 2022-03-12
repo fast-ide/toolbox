@@ -6,4 +6,4 @@ requirements:
 	./requirements.sh
 
 install:
-	./install.sh
+	./install.sh --overwrite
