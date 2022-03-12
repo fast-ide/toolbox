@@ -35,7 +35,7 @@ packages="ag \
           ncdu \
           neovim \
           node \
-          python \
+          pyenv \
           tig \
           tmux \
           tree \
@@ -74,6 +74,10 @@ npm install -g diff-so-fancy \
 # ----------------------------------------------------------------------------
 # Install python packages
 # ----------------------------------------------------------------------------
+
+pyenv install 3.9.7
+eval "$(pyenv init -)"
+pyenv use 3.9.7
 
 python -m pip install jedi \
                       git-plus \
