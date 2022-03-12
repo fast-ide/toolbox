@@ -75,6 +75,7 @@ npm install -g diff-so-fancy \
 # Install python packages
 # ----------------------------------------------------------------------------
 
+eval "$(pyenv init -)"
 pyenv install 3.9.7
 pyenv global 3.9.7
 pyenv shell 3.9.7
