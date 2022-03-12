@@ -10,10 +10,10 @@ brew update
 function install_or_upgrade {
 
     if brew ls --versions "$1" >/dev/null; then
-        brew upgrade $1
+        arch -x86_64 brew upgrade $1
     else
-        brew install $@
-        brew postinstall $1
+        arch -x86_64 brew install $@
+        arch -x86_64 brew postinstall $1
     fi
 }
 
@@ -44,7 +44,7 @@ packages="ag \
 
 brew doctor
 
-brew install llvm $@
+arch -x86_64 brew install llvm $@
 
 for package in $packages
 do
