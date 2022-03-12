@@ -42,6 +42,8 @@ packages="ag \
           wtfutil \
           zsh"
 
+brew doctor
+
 brew install llvm $@
 
 for package in $packages
